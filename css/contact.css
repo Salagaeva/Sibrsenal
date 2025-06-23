@@ -1,0 +1,106 @@
+:root {
+    --cl1: #EE1D23;
+    --cl2: #231F20;
+    --cl3: #F1C798;
+    --cl4: #FFF3E6;
+    --cl5: #2683c5;
+    --cl6: #2877C2;
+    --cl7: #1481FF;
+    --cl8: #22A1FF;
+    --cl9: #5B89ED;
+    --cl10: #67A9FF;
+    --cl11: #6BBBF6;
+    --cl12: #9BC3FF;
+    --cl13: #B3DAFF;
+    --cl14: #C0E4FF;
+    --cl15: #FFF;
+}
+a.web{
+    font-size: 18px !important;
+}
+
+.Box_ContactContent{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Card_contact{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border-color: var(--cl11);
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.TitleCard{
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--cl5);
+    margin-bottom: 15px;
+}
+
+.branchCard_Text{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.BoldbranchCard_Text{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.branchCard_Text_Num{
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.TextNum{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 500px){
+.TitleCard{
+    font-size: 22px;
+
+}
+
+.branchCard_Text{
+    font-size: 18px;
+}
+
+.BoldbranchCard_Text{
+    font-size: 18px;
+}
+
+.branchCard_Text_Num{
+    font-size: 16px;
+}
+
+.TextNum{
+    font-size: 14px;
+}
+.Box_ContactContent{
+    gap: 20px;
+}
+}
+
+.Diler{
+    color: var(--cl2);
+}

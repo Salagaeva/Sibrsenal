@@ -1,0 +1,63 @@
+.container.BoxPC {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    position: relative; 
+    padding: 0px 20px;
+}
+
+.carousel-container .carousel-control-prev,
+.carousel-container .carousel-control-next {
+    position: absolute !important;  
+    top: 50% !important;         
+    transform: translateY(-50%) !important; 
+    z-index: 10 !important;
+    background: none !important;
+    border: none !important;
+    opacity: 0.7 !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    width: auto !important;      
+    height: auto !important;    
+    bottom: auto !important;    
+}
+
+.carousel-container .carousel-control-prev {
+    left: -40px !important; 
+}
+
+.carousel-container .carousel-control-next {
+    right: -40px !important; 
+}
+
+.carousel-container .carousel-control-prev:hover,
+.carousel-container .carousel-control-next:hover {
+    opacity: 1 !important;
+}
+
+#cardCarousel2 {
+    width: 100%;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.col-md-4 {
+    width: 33.333%;
+    padding: 10px;
+    box-sizing: border-box;
+}

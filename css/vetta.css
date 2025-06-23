@@ -1,0 +1,80 @@
+:root {
+    --cl1: #EE1D23;
+    --cl2: #231F20;
+    --cl3: #F1C798;
+    --cl4: #FFF3E6;
+    --cl5: #2683c5;
+    --cl6: #2877C2;
+    --cl7: #1481FF;
+    --cl8: #22A1FF;
+    --cl9: #5B89ED;
+    --cl10: #67A9FF;
+    --cl11: #6BBBF6;
+    --cl12: #9BC3FF;
+    --cl13: #B3DAFF;
+    --cl14: #C0E4FF;
+    --cl15: #FFF;
+}
+
+.cont{
+    margin-top: 40px;
+}
+.cont ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 20px;
+}
+
+.cont li {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease; 
+  color: var(--cl11);
+}
+
+.cont li.active {
+  color: var(--cl5); 
+  font-weight: bold; 
+}
+
+.content-item {
+    margin-top: 40px;
+    display: none; 
+}
+
+.content-item.active {
+  display: block; 
+}
+
+.vet{
+    margin-bottom: 15px;
+}
+
+.indent{
+    padding: 40px 0;
+}
+
+.Card {
+    height: 100%;
+    position: relative;
+}
+
+.now{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 50%;
+}
+
+.stop{
+  position: absolute;
+  top: 30px;
+  transform: rotate(-45deg);
+  left: 10px;
+}
+
+.BlockText {
+    justify-content: flex-start;
+}

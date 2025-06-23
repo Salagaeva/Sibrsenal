@@ -1,0 +1,309 @@
+:root {
+    --cl1: #EE1D23;
+    --cl2: #231F20;
+    --cl3: #F1C798;
+    --cl4: #FFF3E6;
+    --cl5: #2683c5;
+    --cl6: #2877C2;
+    --cl7: #1481FF;
+    --cl8: #22A1FF;
+    --cl9: #5B89ED;
+    --cl10: #67A9FF;
+    --cl11: #6BBBF6;
+    --cl12: #9BC3FF;
+    --cl13: #B3DAFF;
+    --cl14: #C0E4FF;
+    --cl15: #FFF;
+}
+a.web {
+  font-size: 17px;
+  color: var(--cl7);
+  text-decoration: underline;
+  word-break: break-word;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.branchCard {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border-color: var(--cl11);
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+    padding: 20px;
+    align-items: center;
+}
+
+.BoldbranchCard_Text{
+    font-size: 17px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.branchCard_Text{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.branchCard_Text_gmail{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.BoldbranchCard_Text_gmail{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.connection_text{
+    font-size: 15px;
+}
+
+.connection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+    padding: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+#cardCarousel2 {
+    width: 100%; 
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+}
+
+.one{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.marging_connection{
+    margin-left: 10px;
+}
+
+.branchCard_IMG{
+    padding: 10px;
+}
+
+.mod{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+      position: relative;
+      margin-bottom: 10px;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Переопределение стилей Bootstrap для стрелок */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto !important; 
+    height: auto !important; 
+    top: auto !important;      
+    bottom: auto !important;
+    background: none !important; 
+}
+
+@media (max-width: 1850px){
+    .branchCard_IMG{
+        width: 150px;
+    }
+}
+
+@media (max-width: 1700px){
+    .branchCard_IMG{
+        width: 100%;
+    }
+    .connection {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+    .one{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+}
+
+@media (max-width: 1550px){
+    .branchCard {
+        flex-direction: column;
+    }
+    .branchCard_IMG{
+        width: 50%;
+    }
+    .connection {
+        flex-direction: row;
+        align-items: center;
+    }
+       .one{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+    }
+}
+
+@media (max-width: 1250px){
+    .connection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+       .one{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+}
+
+.Title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px){
+    .BoxPC{
+        display: none;
+    }
+    .branchCard {
+    width: 100%;
+    height: 100%;
+    }
+    .Title {
+    padding: 20px 0px;
+    margin-bottom: 0px;
+    }
+    .divisionBox {
+    align-items: flex-start !important;
+    flex-direction: column;
+    gap: 20px;
+    }
+    .dealerBox {
+    width: 100% !important;
+    }
+    .division{
+    margin-bottom: 40px;
+    }
+}
+
+.letterBox{
+    display: flex;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cl11);
+    color: var(--cl15);
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.letter{
+    font-size: 32px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+.dealerBox{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: var(--cl14);
+    padding: 10px 20px;
+}
+
+.TextDealer{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.NumDealer{
+    font-size: 16px;
+}
+
+.dealerBox_Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.division{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+}
+
+.divisionBox{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.divisionBox_Content{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
